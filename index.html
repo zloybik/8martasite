@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>9k women♡</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="ico.png">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+            * {
+                padding: 0px;
+                margin: 0px;
+                font-family: "Noto Sans", sans-serif;
+                justify-self: center;
+            }
+
+            .parent {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: auto;
+            }
+
+            .block1 {
+                width: 220px;
+                height: 300px;
+                background: #cc2ccc;
+                position: absolute;
+                top: 30%;
+                left: 45%;
+                color: white;
+                text-align: center;
+                border-radius: 8%;
+            }
+
+            .block2 {
+                width: 220px;
+                height: 300px;
+                background: #cc2ccc;
+                position: absolute;
+                top: 30%;
+                left: 45%;
+                color: white;
+                text-align: center;
+                border-radius: 8%;
+            }
+
+            .button1 {
+                width: 60px;
+                height: 25px;
+                background: #cc2ccc;
+                position: absolute;
+                color: white;
+                text-align: center;
+                border-radius: 10%;
+            }
+
+            /* From Uiverse.io by kyle1dev */ 
+            .custom-radio-group {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                width: 320px;
+                border-radius: 12px;
+                background: rgba(0, 0, 0, 0.2);
+                padding: 16px;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            }
+            .custom-radio-container {
+                position: relative;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 12px 20px;
+                border-radius: 8px;
+                background-color: rgba(255, 255, 255, 0.2);
+                transition:
+                background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+                font-size: 16px;
+                color: #333333;
+                user-select: none;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            .custom-radio-container:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+                transform: scale(1.03);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            }
+            .custom-radio-container input[type="radio"] {
+                opacity: 0;
+                position: absolute;
+            }
+            .custom-radio-checkmark {
+                position: relative;
+                height: 24px;
+                width: 24px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.3);
+                transition:
+                background-color 0.4s ease,
+                transform 0.4s ease;
+                margin-right: 12px;
+                display: inline-block;
+                vertical-align: middle;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+            }
+            .custom-radio-container input[type="radio"]:checked + .custom-radio-checkmark {
+                background-color: #5a0b4d;
+                border-color: #700a68;
+                box-shadow: 0 0 0 8px rgba(247, 0, 255, 0.2);
+                transform: scale(1.2);
+                animation: pulse 0.6s forwards;
+            }
+            .custom-radio-checkmark::after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            .custom-radio-container
+                input[type="radio"]:checked
+                + .custom-radio-checkmark::after {
+                display: block;
+                left: 50%;
+                top: 50%;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background: #730977;
+                transform: translate(-50%, -50%);
+            }
+            @keyframes pulse {
+                0% {
+                transform: scale(1.2);
+                }
+                50% {
+                transform: scale(1.4);
+                }
+                100% {
+                transform: scale(1.2);
+                }
+            }
+            
+            /* From Uiverse.io by Maximinodotpy */ 
+            .inputGroup {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 1em 0 1em 0;
+                max-width: 190px;
+                position: relative;
+            }
+            
+            .inputGroup input {
+                font-size: 100%;
+                padding: 0.8em;
+                outline: none;
+                border: 2px solid rgb(202, 78, 150);
+                background-color: transparent;
+                border-radius: 20px;
+                width: 100%;
+            }
+            
+            .inputGroup label {
+                position: absolute;
+                top: 0;
+                left: 10px;
+                z-index: 10;
+                color: white;
+                padding: 0 5px;
+                transition: all 0.3s ease;
+            }
+
+            .inputGroup :is(input:focus, input:valid)~label {
+                transform: translateY(-53%) scale(.9);
+                margin: 0em;
+                margin-left: 1.3em;
+                padding: 0.4em;
+                z-index: 10;
+            }
+
+            
+            .inputGroup :is(input:focus, input:valid) {
+                border-color: rgba(247, 0, 255, 0.2);
+            }
+
+            /* From Uiverse.io by mrhyddenn */ 
+            .shadow__btn {
+                padding: 10px 20px;
+                border: none;
+                font-size: 17px;
+                color: #fff;
+                border-radius: 7px;
+                letter-spacing: 4px;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: 0.5s;
+                transition-property: box-shadow;
+                display: flex;
+            }
+            
+            .shadow__btn {
+                background: rgb(212, 0, 255);
+                box-shadow: 0 0 25px rgb(212, 0, 255);
+            }
+            
+            .shadow__btn:hover {
+                box-shadow: 0 0 5px rgb(212, 0, 255),
+                            0 0 25px rgb(212, 0, 255),
+                            0 0 50px rgb(212, 0, 255),
+                            0 0 100px rgb(212, 0, 255);
+                cursor: pointer;
+            }
+
+            .scores {
+                margin-left: auto; /* Сдвигает очки вправо */
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 14px;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent" style="background-color:rgb(131, 17, 106);">
+            <div id="register">
+                <div class="inputGroup">
+                    <input type="text" required="" autocomplete="off" id="nick">
+                    <label for="name">Name</label>
+                </div>
+                <div class="inputGroup">
+                    <input type="text" required="" autocomplete="off" id="password">
+                    <label for="name">password</label>
+                </div>
+                <button class="shadow__btn" id="play">
+                    Далее
+                </button>
+                <br>
+            </div>
+            <div id="tablica">
+                <div class="custom-radio-group">
+                    <label class="custom-radio-container">
+                        <input type="radio" name="custom-radio" id="aisha"/>
+                        <span class="custom-radio-checkmark"></span>
+                        Аиша
+                        <div class="scores" id="aishaScore"></div>
+                    </label>
+                    <label class="custom-radio-container">
+                        <input type="radio" name="custom-radio" id="vika"/>
+                        <span class="custom-radio-checkmark"></span>
+                        Вика
+                        <div class="scores" id="vikaScore"></div>
+                    </label>
+                    <label class="custom-radio-container">
+                        <input type="radio" name="custom-radio" id="aytan"/>
+                        <span class="custom-radio-checkmark"></span>
+                        Айтан
+                        <div class="scores" id="aytanScore"></div>
+                    </label>
+                    <label class="custom-radio-container">
+                        <input type="radio" name="custom-radio" id="xurma"/>
+                        <span class="custom-radio-checkmark"></span>
+                        Хумейра
+                        <div class="scores" id="xurmaScore"></div>
+                    </label>
+                    <label class="custom-radio-container">
+                        <input type="radio" name="custom-radio" id="aysel"/>
+                        <span class="custom-radio-checkmark"></span>
+                        Айсель
+                        <div class="scores" id="ayselScore"></div>
+                    </label>
+                    <label class="custom-radio-container">
+                        <input type="radio" name="custom-radio" id="damla"/>
+                        <span class="custom-radio-checkmark"></span>
+                        Дамла
+                        <div class="scores" id="damlaScore"></div>
+                    </label>
+                    <label class="custom-radio-container">
+                        <input type="radio" name="custom-radio" id="fatima"/>
+                        <span class="custom-radio-checkmark"></span>
+                        Фатима
+                        <div class="scores" id="fatimaScore"></div>
+                    </label>
+                    <label class="custom-radio-container">
+                        <input type="radio" name="custom-radio" id="goyda"/>
+                        <span class="custom-radio-checkmark"></span>
+                        Аида
+                        <div class="scores" id="goydaScore"></div>
+                    </label>
+                    <label class="custom-radio-container">
+                        <input type="radio" name="custom-radio" id="nuray"/>
+                        <span class="custom-radio-checkmark"></span>
+                        Нурай
+                        <div class="scores" id="nurayScore"></div>
+                    </label>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <span style="display: flex; justify-self: center; color: black;">Сделано с любовью от bybad & konakona</span>
+        </div>
+        <script>
+            tablica.hidden = true;
+            register.hidden = false;
+
+            function nulevoy(){
+                aisha.value = 0;
+                vika.value = 0;
+                aytan.value = 0;
+                aysel.value = 0;
+                damla.value = 0;
+                fatima.value = 0;
+                xurma.value = 0;
+                goyda.value = 0;
+                nuray.value = 0;
+            }
+
+            async function qolosa(n){
+                kotokbas = await rqst('POST',"https://9kpodarokbymen.eu.pythonanywhere.com/qolos", {"qolos":n,"nick":nick.value});
+                kotokbas = JSON.parse(kotokbas);
+                var choooo = kotokbas['qolosa'];
+                aishaScore.textContent = choooo['aisha'];
+                vikaScore.textContent = choooo['vika'];
+                aytanScore.textContent = choooo['aytan'];
+                ayselScore.textContent = choooo['aysel'];
+                damlaScore.textContent = choooo['damla'];
+                fatimaScore.textContent = choooo['fatima'];
+                xurmaScore.textContent = choooo['xurma'];
+                goydaScore.textContent = choooo['goyda'];
+                nurayScore.textContent = choooo['nuray'];
+            }
+
+            nulevoy();
+
+            function rqst(method, url, jsonn) {
+                return new Promise(function (resolve, reject) {
+                    let xhr = new XMLHttpRequest();
+                    if (method == 'GET') {xhr.open('GET', url);xhr.send();} else {
+                    xhr.open('POST', url);
+                    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+                    xhr.send(JSON.stringify(jsonn));
+                    }
+                    xhr.onload = function () {
+                        if (this.status >= 200 && this.status < 300) {
+                            resolve(xhr.response);
+                        } else {
+                            reject({
+                                status: this.status,
+                                statusText: xhr.statusText
+                            });
+                        }
+                    };
+                    xhr.onerror = function () {
+                        reject({
+                            status: this.status,
+                            statusText: xhr.statusText
+                        });
+                    };
+
+                });
+            }
+            play.addEventListener('click', async function () {
+                reg = await rqst('POST',"https://9kpodarokbymen.eu.pythonanywhere.com/reg", {"nick":nick.value,"password":password.value});
+                reg = JSON.parse(reg);
+                if(reg["acc"]==3){
+                    alert("пробел в нике");
+                }
+                if(reg["acc"]==2){
+                    alert("пароль не правильный");
+                }
+                if(reg["acc"]==1){ 
+                    register.hidden = true;
+                    tablica.hidden = false;
+                }
+                if(reg["acc"]==0){
+                    register.hidden = true;
+                    tablica.hidden = false;
+                }
+            });
+
+            aisha.addEventListener('click', async function () {
+                nulevoy();
+                aisha.value = 1;
+                qolosa("aisha");
+                alert("не правильно все наши девочки красавицы");
+            });
+            vika.addEventListener('click', async function () {
+                nulevoy();
+                vika.value = 1;
+                qolosa("vika");
+                alert("не правильно все наши девочки красавицы");
+            });
+            aytan.addEventListener('click', async function () {
+                nulevoy();
+                aytan.value = 1;
+                qolosa("aytan");
+                alert("не правильно все наши девочки красавицы");
+            });
+            xurma.addEventListener('click', async function () {
+                nulevoy();
+                xurma.value = 1;
+                qolosa("xurma");
+                alert("не правильно все наши девочки красавицы");
+            });
+            aysel.addEventListener('click', async function () {
+                nulevoy();
+                aysel.value = 1;
+                qolosa("aysel");
+                alert("не правильно все наши девочки красавицы");
+            });
+            damla.addEventListener('click', async function () {
+                nulevoy();
+                damla.value = 1;
+                qolosa("damla");
+                alert("не правильно все наши девочки красавицы");
+            });
+            fatima.addEventListener('click', async function () {
+                nulevoy();
+                fatima.value = 1;
+                qolosa("fatima");
+                alert("не правильно все наши девочки красавицы");
+            });
+            nuray.addEventListener('click', async function () {
+                nulevoy();
+                nuray.value = 1;
+                qolosa("nuray");
+                alert("не правильно все наши девочки красавицы");
+            });
+            goyda.addEventListener('click', async function () {
+                nulevoy();
+                goyda.value = 1;
+                qolosa("goyda");
+                alert("не правильно все наши девочки красавицы");
+            });
+        </script>
+    </body>
+</html>
